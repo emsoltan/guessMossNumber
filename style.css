@@ -175,7 +175,7 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
 }
 main {
   height: 60vh;
@@ -196,6 +196,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  letter-spacing:2px;
   /* border:3px solid white; */
 }
 
@@ -204,7 +205,8 @@ h1 {
   margin-top: 3rem;
   font-size: 2rem;
   text-align: center;
-  padding: 2rem;
+  margin-top: 4rem;
+  height: 10vh;
 }
 
 .number {
@@ -252,7 +254,7 @@ h1 {
   width: 70%;
   text-align: center;
   display: block;
-  margin-bottom: 2rem;
+  margin: 2rem;
   border-radius: 5px;
 }
 

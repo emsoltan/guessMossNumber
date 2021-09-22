@@ -90,7 +90,7 @@ document.querySelector(".again").addEventListener("click", function () {
   displayMessage("⏲ Start guessing...");
   document.querySelector(".attempts").textContent = 0;
   document.querySelector(".score").textContent = score;
-  number.textContent = "";
+  number.textContent = "?";
   number.style.backgroundImage = "";
   document.querySelector(".guess").value = "";
   document.querySelector("body").style.backgroundColor = "#222";

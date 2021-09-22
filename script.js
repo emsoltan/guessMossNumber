@@ -31,7 +31,7 @@ document.querySelector(".check").addEventListener("click", function () {
     // it will generate a new number with each click hence the logic won't stand.*/
     if (!guess) {
       //when there is no input
-      displayMessage("No Number");
+      displayMessage("⛔ Enter a number!");
     } else if (guess === secretNumber) {
       //when player wins
     // message.appendChild("happyMoss") 

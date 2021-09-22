@@ -53,7 +53,6 @@ main {
   /* border:3px white solid; */
 }
 
-
 .left,
 .right {
   width: 52rem;
@@ -99,7 +98,7 @@ h1 {
 
 .again {
   margin-top: 2rem;
-  text-align: center;  
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -141,3 +140,144 @@ h1 {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 600px) {
+html {
+  font-size: 45%;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3;
+  letter-spacing: 2px;
+}
+
+/* LAYOUT */
+header {
+  /* position: relative; */
+  /* background-color: #0F7303; */
+  height: 35vh;
+  width: 100%;
+  /* border-bottom: 7px solid #eee; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-image: url(images/mossheader.png); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-top: 4rem;
+}
+main {
+  height: 60vh;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  /* border:3px white solid; */
+}
+
+.left,
+.right {
+  width: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border:3px solid white; */
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.number {
+  color: #eee;
+  font-size: 6rem;
+  width: 50%;
+  height: 200px;
+  background-image: url(images/mossheader.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding: 3rem 0rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  text-align: center;
+  border: 4px solid #eee;
+  /* width:70%; */
+}
+
+.between {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 3rem;
+  border-radius: 5px;
+  border: 4px solid #eee;
+  width:70%;
+  letter-spacing: 1px;
+}
+
+.again {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 3rem;
+  padding: 1.5rem;
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 4rem;
+  height: 2rem;
+  /* width: 70%; */
+  font-size:1.5rem;
+}
+
+.label-score {
+  margin-bottom: 1.5rem;
+}
+}

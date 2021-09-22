@@ -4,6 +4,11 @@
 let score = 20;
 let highScore = 0;
 let attempts = 0;
+// let message = document.querySelector(".message")
+// let happyMoss = document.createElement("img");
+// happyMoss.classList.add("winning");
+// happyMoss.src = "images/winning.png";
+
 let number = document.querySelector(".number");
 const displayMessage = function (message) {
   document.querySelector(".message").textContent = message;
@@ -29,6 +34,7 @@ document.querySelector(".check").addEventListener("click", function () {
       displayMessage("No Number");
     } else if (guess === secretNumber) {
       //when player wins
+    // message.appendChild("happyMoss") 
       displayMessage("🎉 Correct number,You lucky duck! 🎉 ");
       //manipulate styles on winning
       number.textContent = secretNumber;

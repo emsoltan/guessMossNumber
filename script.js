@@ -35,7 +35,7 @@ document.querySelector(".check").addEventListener("click", function () {
     } else if (guess === secretNumber) {
       //when player wins
     // message.appendChild("happyMoss") 
-      displayMessage("🎉 Correct number,You lucky duck! 🎉 ");
+      displayMessage("🎉 Correct number! 🎉 ");
       //manipulate styles on winning
       number.textContent = secretNumber;
       document.querySelector("body").style.backgroundColor = "#0F7303";

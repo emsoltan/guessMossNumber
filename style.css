@@ -27,53 +27,55 @@ body {
 
 /* LAYOUT */
 header {
-  /* position: relative; */
-  /* background-color: #0F7303; */
-  height: 50vh;
+
+  height: 20vh;
   width: 70%;
-  /* border-bottom: 7px solid #eee; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* background-image: url(images/mossheader.png); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin-top:8rem;
+  margin-bottom:10rem;
+
+    /* border:3px white solid; */
+
 }
 
 main {
-  height: 65vh;
+  height: 80vh;
   color: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 70%;
+  width: 100%;
   /* border:3px white solid; */
+
 }
 
 .left,
 .right {
-  width: 52rem;
+  width: 50%;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* border:3px solid white; */
 }
 
 /* ELEMENTS STYLE */
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
-  padding: 4rem;
+ margin-top: 10rem;
 }
 
 .number {
   color: #eee;
-  font-size: 6rem;
+  font-size: 4rem;
   width: 170px;
   height: 120px;
   background-image: url(images/mossheader.png);
@@ -83,17 +85,19 @@ h1 {
   border: 1px solid #eee;
   padding: 3rem 0rem;
   text-align: center;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   text-align: center;
-  border: 4px solid #eee;
+  /* border: 4px solid #eee; */
 }
 
 .between {
   font-size: 2rem;
+  margin-top:4rem;
   margin-bottom: 2rem;
-  padding: 4rem;
+  padding: 2rem 4rem;
   border-radius: 5px;
-  border: 4px solid #eee;
+  border: 2px solid #eee;
+  width:80%;
 }
 
 .again {
@@ -104,15 +108,15 @@ h1 {
 
 .guess {
   background: none;
-  border: 4px solid #eee;
+  border: 2px solid #eee;
   font-family: inherit;
   color: inherit;
-  font-size: 5rem;
+  font-size: 3rem;
   padding: 2rem;
-  width: 25rem;
+  width: 20rem;
   text-align: center;
   display: block;
-  margin-bottom: 3rem;
+  margin-top: 8rem; 
   border-radius: 5px;
 }
 
@@ -122,9 +126,11 @@ h1 {
   color: #222;
   font-size: 2rem;
   font-family: inherit;
-  padding: 2rem 2rem;
+  padding: 1rem ;
   cursor: pointer;
-  margin-bottom: 2rem;
+  margin: 2rem;
+    border-radius: 5px;
+
 }
 
 .btn:hover {
@@ -132,8 +138,13 @@ h1 {
 }
 
 .message {
-  margin-bottom: 8rem;
-  height: 3rem;
+  margin-bottom: 2rem;
+  height: 15rem;
+  font-size: 2.5rem;
+  /* border:1px solid #eee; */
+  padding: 3rem 5rem;
+  width: 100%;
+  text-align: center;
 }
 
 .label-score {
@@ -142,7 +153,285 @@ h1 {
 
 
 /******************MEDIAQUERY******************/
-@media (max-width: 600px) {
+
+/*=========== laptops =======*/
+
+@media (min-width:769px) and (max-width:1024px)  {
+html {
+  font-size: 50%;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LAYOUT */
+header {
+  margin-top:8rem;
+
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main {
+  height: 60vh;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  /* border:3px white solid; */
+}
+
+.left,
+.right {
+  width: 70%;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  letter-spacing:2px;
+  /* border:3px solid white; */
+  
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  text-align: center;
+  height: 100%;
+}
+
+.number {
+  color: #eee;
+  font-size: 6rem;
+  width: 40%;
+  height: 200px;
+  background-image: url(images/mossheader.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  padding: 3rem 0rem;
+  text-align: center;
+  margin-top: 4rem;
+  text-align: center;
+  border: 2px solid #eee;
+}
+
+.between {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  padding: 3rem 5rem;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  width:100%;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.again {
+  margin-top: 1.5rem;
+  text-align: center;
+  /* margin-bottom: 1.5rem; */
+}
+
+.guess {
+  background: none;
+  border: 2px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 3rem;
+  padding: 2.5rem 1.5rem;
+  width: 30%;
+  text-align: center;
+  display: block;
+  margin-top: 14rem;
+  border-radius: 5px;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  /* font-size: 1.8rem; */
+
+  font-family: inherit;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  /* margin-bottom: 1.5rem; */
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  height: 100px;
+  width: 150%;
+  font-size:3rem;
+  padding:1rem;
+}
+
+.label-score {
+  margin-bottom: 1.5rem;
+}
+} 
+
+
+
+
+/*=========== Tablet =======*/
+@media (min-width:481px) and (max-width:768px)  {
+html {
+  font-size: 50%;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LAYOUT */
+header {
+
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main {
+  height: 60vh;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  /* border:3px white solid; */
+}
+
+.left,
+.right {
+  width: 70%;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  letter-spacing:2px;
+  /* border:3px solid white; */
+  
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  margin-top:5rem;
+  text-align: center;
+  height: 100%;
+}
+
+.number {
+  color: #eee;
+  font-size: 6rem;
+  width: 40%;
+  height: 200px;
+  background-image: url(images/mossheader.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  padding: 3rem 0rem;
+  text-align: center;
+  margin-top: 4rem;
+  text-align: center;
+  border: 2px solid #eee;
+}
+
+.between {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  padding: 3rem 5rem;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  width:100%;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.again {
+  margin-top: 1.5rem;
+  text-align: center;
+  /* margin-bottom: 1.5rem; */
+}
+
+.guess {
+  background: none;
+  border: 2px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 3rem;
+  padding: 2.5rem 1.5rem;
+  width: 30%;
+  text-align: center;
+  display: block;
+  margin-top: 14rem;
+  border-radius: 5px;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  /* font-size: 1.8rem; */
+
+  font-family: inherit;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  /* margin-bottom: 1.5rem; */
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  /* margin-bottom: 4rem; */
+  height: 100px;
+  width: 150%;
+  font-size:3rem;
+  padding:1rem;
+}
+
+.label-score {
+  margin-bottom: 1.5rem;
+}
+}
+
+/*===== Mobile ======*/
+
+@media (min-width:320px) and (max-width:480px)  {
 html {
   font-size: 45%;
 }
@@ -164,7 +453,7 @@ body {
 header {
   /* position: relative; */
   /* background-color: #0F7303; */
-  height: 150px;
+  height: 25vh;
   width: 100%;
   /* border-bottom: 7px solid #eee; */
   display: flex;
@@ -177,21 +466,23 @@ header {
   background-position: center;
   /* padding-top: 4rem; */
 }
+
 main {
-  height: 60vh;
+  height: 70vh;
   color: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 5rem;
   /* border:3px white solid; */
 }
 
 .left,
 .right {
-  width: 50%;
-  font-size: 1.5rem;
+  width: 70%;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -201,12 +492,7 @@ main {
 }
 
 /* ELEMENTS STYLE */
-h1 {
-  margin-top: 6rem;
-  font-size: 1.7rem;
-  text-align: center;
-  height: 100%;
-}
+
 
 .number {
   color: #eee;
@@ -217,22 +503,20 @@ h1 {
   background-size: cover;
   background-position: center;
   border-radius: 5px;
-  border: 1px solid #eee;
   padding: 3rem 0rem;
   text-align: center;
-  margin-bottom: 5rem;
+  /* margin-bottom: 4rem; */
   text-align: center;
-  border: 4px solid #eee;
-  /* width:70%; */
+  border: 2px solid #eee;
 }
 
 .between {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 5px;
-  border: 4px solid #eee;
-  width:70%;
+  border: 2px solid #eee;
+  width:90%;
   line-height: 1.5;
   letter-spacing: 2px;
 }
@@ -240,12 +524,12 @@ h1 {
 .again {
   margin-top: 1.5rem;
   text-align: center;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 .guess {
   background: none;
-  border: 4px solid #eee;
+  border: 2px solid #eee;
   font-family: inherit;
   color: inherit;
   font-size: 3rem;
@@ -253,7 +537,6 @@ h1 {
   width: 70%;
   text-align: center;
   display: block;
-  margin: 2rem;
   border-radius: 5px;
 }
 
@@ -261,11 +544,12 @@ h1 {
   border: none;
   background-color: #eee;
   color: #222;
-  font-size: 1.5rem;
+  /* font-size: 1.8rem; */
+
   font-family: inherit;
-  padding: 1.5rem 1.5rem;
+  padding: 2rem 2.5rem;
   cursor: pointer;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 .btn:hover {
@@ -273,10 +557,11 @@ h1 {
 }
 
 .message {
-  margin-bottom: 4rem;
-  height: 2rem;
-  /* width: 70%; */
-  font-size:1.5rem;
+  /* margin-bottom: 4rem; */
+  height: 100px;
+  width: 150%;
+  font-size:2.5rem;
+  padding:1rem;
 }
 
 .label-score {
